@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
+    <title>Pick Menu</title>
+    <!-- taiwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- dailyUi link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header-banner w-full flex bg-black">
+      <div class="banner-img-1 w-1/5">
+        <img
+          src="images/banner/banner3.jpg"
+          alt="trophy"
+          class="hidden lg:block mt-20"
+        />
+      </div>
+      <div
+        class="banner-title w-3/5 flex flex-col text-center justify-center items-center"
+      >
+        <h1 class="text-8xl font-semibold text-orange-700">Pick Menu</h1>
+        <p class="mx-6 mt-4 text-orange-400">
+          All the meals are ready to eat. Simply warm up, plate for the family
+          and enjoy!
+        </p>
+      </div>
+      <div class="banner-img-2 w-1/5">
+        <img
+          src="images/banner/banner.jpg"
+          alt="trophy"
+          class="mt-2 hidden lg:block"
+        />
+      </div>
+    </header>
+    <!-- header end -->
+    <!-- main start -->
+    <main class="bg-slate-900">
+      <section class="content-section w-11/12 mx-auto lg:flex gap-4 pt-16">
+        <!-- card section start -->
+        <section
+          class="card-section grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-3/4"
+        >
+          <!-- card 1 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img
+                src="images/menu/burger.jpg"
+                alt="burger"
+                class="h-full w-full"
+              />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="beef burger">
+                Beef Burger
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price - Tk</div>
+                <div class="badge badge-outline">
+                  <span> 480</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select1
+              </button>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img
+                src="images/menu/chicken-burger.jpg"
+                alt="chicken-burger"
+                class="h-full"
+              />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2
+                class="card-title font-bold text-3xl mb-2"
+                id="chicken-burger"
+              >
+                Chicken Burger
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 450</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select2
+              </button>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img src="images/menu/pizza.jpg" alt="Pizaa" class="h-full" />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="Pizza">
+                Pizza
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 550</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select3
+              </button>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img
+                src="images/menu/chicken-pizzajpg.jpg"
+                alt="Pizaa"
+                class="h-full"
+              />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="Pizza">
+                Chicken Pizza
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 500</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select3
+              </button>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img
+                src="images/menu/double-cheese-pizza.jpg"
+                alt="Pizaa"
+                class="h-full w-full"
+              />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="Pizza">
+                Double Cheese
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 620</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select3
+              </button>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img src="images/menu/setMenu-1.jpg" alt="Pizaa" class="h-full" />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="Pizza">
+                Set Menu 1
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 240</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select3
+              </button>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="card bg-black-100 shadow-xl text-white border" id="card">
+            <figure class="h-2/4">
+              <img src="images/menu/setMenu-2.jpg" alt="Pizaa" class="h-full" />
+            </figure>
+            <div class="card-body h-2/4 p-0 pt-2 px-4">
+              <h2 class="card-title font-bold text-3xl mb-2" id="Pizza">
+                Set Menu 2
+              </h2>
+
+              <div class="card-actions justify-end">
+                <div class="input-group">
+                  <button
+                    class="plus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="plus-btn"
+                  >
+                    +
+                  </button>
+                  <input
+                    type="text"
+                    id="quantity"
+                    class="quantity w-1/5 text-black px-3 font-semibold"
+                  />
+                  <button
+                    class="minus-btn bg-blue-300 rounded-lg px-3 font-semibold text-xl text-black"
+                    id="minus-btn"
+                  >
+                    -
+                  </button>
+                </div>
+                <div class="badge badge-outline">Price -Tk</div>
+                <div class="badge badge-outline">
+                  <span> 280</span>
+                </div>
+              </div>
+              <button
+                class="selectBtn py-2 bg-cyan-500 font-semibold mt-4 rounded-lg text-lg mb-8"
+              >
+                Select3
+              </button>
+            </div>
+          </div>
+        </section>
+        <!-- select favourateFive-calculation-section -->
+        <section
+          class="select-calcultion-section md:w-/4 lg:w-1/4 mt-10 fixed top-32 right-0"
+        >
+          <!-- ---------------------------------------------selected 5 table ---------------------------------------->
+          <div class="favourite-five border-2 rounded-2xl">
+            <h2 class="text-xl text-white text-center font-bold mt-10 mb-4">
+              Favourite Five
+            </h2>
+            <div class="content-container my-5">
+              <table class="w-full text-white ml-3">
+                <!-- head -->
+                <thead>
+                  <tr>
+                    <td class="font-bold">Name</td>
+                    <td class="font-bold">Price</td>
+                    <td class="font-bold">Qty</td>
+                    <td class="font-bold">Total</td>
+                  </tr>
+                </thead>
+                <tbody id="Favourite-container">
+                  <!-- row 1 -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!----------------------------------------------------- budget start------------------------------------- -->
+          <div
+            class="budget text-white text-center mt-10 border-2 rounded-2xl py-4"
+            id="budget"
+          >
+            <h2 class="text-xl font-bold">Bill</h2>
+
+            <!-- calculate btn -->
+            <!-- player expences -->
+            <h2 class="my-3">Price : $<span id="price">00</span></h2>
+            <h2 class="my-3">Tax : $<span id="tax">00</span></h2>
+            <h2 class="my-3">
+              Total-Price : $<span id="total-price">00</span>
+            </h2>
+            <button
+              class="px-8 py-2 rounded-lg font-bold text-lg bg-cyan-500"
+              id="calculate-btn"
+            >
+              Calculate
+            </button>
+          </div>
+        </section>
+      </section>
+    </main>
+    <!-- main end -->
+    <!-- js link -->
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

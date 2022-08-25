@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>recap</title>
+  </head>
+  <body>
+    <section>
+      <h1 id="header-one">hi there</h1>
+      <button onclick="changeByfunction()">click here</button>
+      <button id="event-listener">change it by add event listener</button>
+    </section>
+
+    <h1 id="header-change">hello there</h1>
+    <input type="text" name="" id="input-field" />
+    <button id="update-btn">click to update</button>
+
+    <script>
+      // ----------------------------------------------------------------------------------------------------
+      // for change by function
+      function changeByfunction() {
+        const headerOne = document.getElementById("header-one");
+        headerOne.innerText = "change it by function";
+      }
+
+      // add event listener
+      document
+        .getElementById("event-listener")
+        .addEventListener("click", function () {
+          const headerOne = document.getElementById("header-one");
+          headerOne.innerText = "by add listener";
+        });
+      // -----------------------------------------------------------------------------------
+      document
+        .getElementById("update-btn")
+        .addEventListener("click", function () {
+          const inputField = document.getElementById("input-field");
+          const inputFieldText = inputField.value;
+          const headerChange = document.getElementById("header-change");
+          headerChange.innerText = inputFieldText;
+          inputField.value = "";
+        });
+    </script>
+  </body>
+</html>

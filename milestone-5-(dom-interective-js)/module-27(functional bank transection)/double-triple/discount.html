@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discount</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-3/4 mx-auto bg-slate-600">
+    <header class="mt-20 text-center">
+      <h2 class="text-6xl font-bold">30% Discount On</h2>
+    </header>
+    <main>
+      <section class="amount-section grid grid-cols-3 gap-5 mt-10">
+        <div class="bg-green-300 text-center py-8 rounded-lg">
+          <h2 class="text-3xl font-bold">Input Price</h2>
+          <input
+            type="text"
+            name=""
+            id="input-price"
+            class="w-3/4 mx-auto py-3 rounded-lg mt-2 font-bold px-14 text-2xl"
+          />
+        </div>
+        <!-- /////////////////////////////////////////////// -->
+        <div class="bg-green-500 text-center py-8 rounded-lg">
+          <h2 class="text-3xl font-bold">Discount amount</h2>
+          <h2 class="text-6xl font-bold text-white">
+            $ <span id="discount">00</span>
+          </h2>
+        </div>
+        <!-- --------------------------------------------------------- -->
+        <div class="bg-green-700 text-center py-8 rounded-lg">
+          <h2 class="text-3xl font-bold">Net Price</h2>
+          <h2 class="text-6xl font-bold text-white">
+            $ <span id="net-price">00</span>
+          </h2>
+        </div>
+      </section>
+      <section class="text-center mt-10 input-group">
+        <button
+          class="px-5 py-4 rounded-lg font-bold text-3xl bg-green-400"
+          disabled
+          id="buyNow-btn"
+        >
+          Discount Now
+        </button>
+        <input
+          type="text"
+          name=""
+          id="input-dom"
+          class="w-4/12 py-6 rounded-lg px-8 mx-4 font-bold"
+          placeholder="Write DOM to apply discount"
+        />
+      </section>
+    </main>
+    <script src="discount.js"></script>
+  </body>
+</html>

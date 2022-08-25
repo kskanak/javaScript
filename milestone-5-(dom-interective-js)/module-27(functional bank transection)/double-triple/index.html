@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Double-Tripple</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-3/4 mx-auto bg-slate-500">
+    <header class="mt-20 text-center">
+      <h2 class="text-5xl font-bold">Double && Tripple</h2>
+    </header>
+    <main>
+      <section class="grid grid-cols-2 text-center gap-10 mt-10">
+        <div class="input-number bg-green-700 py-4 rounded-lg">
+          <h2 class="text-3xl font-bold mb-5">Input Number</h2>
+          <input
+            type="text"
+            name=""
+            id="inputField"
+            class="py-5 bg-green-800 outline-none pl-20 text-3xl text-red-500"
+          />
+        </div>
+        <div class="output-number bg-green-800 py-4 text-center rounded-lg">
+          <h2 class="text-3xl font-bold">Output Number</h2>
+          <h2 class="text-7xl font-bold mt-4" id="outputNumber">00</h2>
+        </div>
+      </section>
+      <section class="text-center mt-10">
+        <button
+          class="px-5 py-3 bg-slate-900 text-white font-semibold rounded-lg"
+          id="double-btn"
+        >
+          Double
+        </button>
+        <button
+          class="px-5 py-3 bg-slate-900 text-white font-semibold rounded-lg"
+          id="tripple-btn"
+        >
+          Tripple
+        </button>
+      </section>
+    </main>
+    <script src="js/utilites.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

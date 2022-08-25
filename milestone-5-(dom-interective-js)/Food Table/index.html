@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Login Page</title>
+  </head>
+  <body class="bg-slate-900 mt-10">
+    <header>
+      <h2 class="text-6xl font-bold text-center underline text-white">
+        Login Page
+      </h2>
+    </header>
+    <main class="w-4/5 mx-auto mt-20 text-white">
+      <section class="grid grid-cols-2 gap-5">
+        <!-- -----------------------pin generator  ------------------------------------------>
+        <section class="pin-generator h-56 bg-slate-800 p-5 text-center">
+          <h2 class="text-3xl font-bold">Pin Generator</h2>
+          <div class="input-pin">
+            <input
+              type="text"
+              class="rounded-lg px-10 my-2 border-2 focus:border-red-300 border-teal-300 outline-none text-black font-semibold"
+              id="input-pin"
+            />
+          </div>
+          <button
+            class="w-24 bg-slate-900 h-24 text-base font-bold rounded-full border-2"
+            id="pin-generate-btn"
+          >
+            Pin Generate
+          </button>
+        </section>
+        <!--------------------------------------------  log email and password ---------------------------------------------------->
+        <section class="login-section">
+          <section class="validation h-56 bg-slate-800 p-5 text-center">
+            <h2 class="text-3xl font-bold">E-mail & Password</h2>
+            <div class="input-validation">
+              <!--  enter email -->
+              <span> Enter Email : </span>
+              <input
+                type="email"
+                class="rounded-lg px-10 my-2 border-2 focus:border-red-300 border-teal-300 outline-none text-black"
+                placeholder="Enter your Email"
+                id="input-email"
+              />
+              <br />
+              <span> Enter Password : </span>
+              <input
+                type="password"
+                class="rounded-lg px-10 my-2 border-2 focus:border-red-300 border-teal-300 outline-none text-black"
+                placeholder="Enter your Password"
+                id="input-password"
+              />
+            </div>
+            <button
+              class="px-10 py-25 bg-slate-500 text-base font-bold rounded-xl border-2"
+              disabled
+              id="submit-btn"
+            >
+              Submit
+            </button>
+            <input
+              type="email"
+              class="rounded-lg px-10 my-2 border-2 focus:border-red-300 border-teal-300 outline-none w-40 text-black"
+              placeholder="Enter Pin"
+              id="pin-match"
+            />
+            <br />
+            <small>Enter pin to Enable submit </small>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- script  -->
+    <script src="js/common.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
