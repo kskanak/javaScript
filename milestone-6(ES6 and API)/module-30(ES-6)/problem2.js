@@ -6,16 +6,16 @@
 // Print the result.
 
 const friends = ["kanak", "ks", "khaled", "khaladul", "kskanak"];
-console.log(friends);
 
-const even = (names) => {
-  let evenFriend = [];
-  for (const friend of names) {
-    if (friend.length % 2 === 0) {
-      evenFriend.push(friend);
+const evenFriend = (friend) => {
+  const even = [];
+  for (let name of friends) {
+    if (name.length % 2 === 0) {
+      even.push(name);
     }
   }
-  return evenFriend;
+  return even;
 };
-const evenName = even(friends);
+
+const evenName = evenFriend(friends);
 console.log(evenName);

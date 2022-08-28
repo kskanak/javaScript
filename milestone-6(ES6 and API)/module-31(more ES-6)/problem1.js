@@ -5,11 +5,5 @@
 // number.
 
 const numbers = [1, 3, 5, 7, 9];
-const evenNumbers = [];
-for (number of numbers) {
-  evenNumbers.push(number + 1);
-}
+const evenNumbers = numbers.map((num) => num + 1);
 console.log(evenNumbers);
-
-const even = numbers.map((n) => n + 1);
-console.log(even);

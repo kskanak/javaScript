@@ -11,10 +11,5 @@ for (pep of people) {
 
 console.log(sum);
 
-const allAge = people.map((peopleAge) => peopleAge.age);
-console.log(allAge);
-const ageSum = allAge.reduce((previous, current) => previous + current, 0);
-console.log(ageSum);
-
-const result = people.reduce((prev, recent) => prev + recent.age, 0);
-console.log(result);
+const sumOfAge = people.reduce((previous, recent) => previous + recent.age, 0);
+console.log(sumOfAge);

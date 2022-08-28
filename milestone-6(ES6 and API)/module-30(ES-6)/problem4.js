@@ -8,6 +8,5 @@
 const firstNumberArray = [2, 43, 545, 656, 575, 756];
 const secondNumberArray = [45, 544, 4540, 23, 434, 345];
 const newArray = [...firstNumberArray, ...secondNumberArray];
-console.log(newArray);
 const maxNumber = Math.max(...newArray);
 console.log(maxNumber);

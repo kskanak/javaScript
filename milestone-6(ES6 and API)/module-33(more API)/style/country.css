@@ -1,0 +1,11 @@
+#country-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.countryDiv {
+  border: 1px solid red;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}

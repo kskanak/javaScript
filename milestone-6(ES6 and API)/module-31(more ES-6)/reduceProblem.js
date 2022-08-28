@@ -9,8 +9,5 @@ for (number of numbers) {
 }
 console.log(sum);
 
-const sumOfNumbers = numbers.reduce(
-  (previous, current) => previous + current,
-  0
-);
-console.log(sumOfNumbers);
+const sumNumber = numbers.reduce((previous, recent) => previous + recent, 0);
+console.log(sumNumber);

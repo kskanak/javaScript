@@ -5,16 +5,14 @@
 // Print the result.
 
 const numberArray = [2, 3, 4, 5, 6, 7, 8];
-
-const average = (numbers) => {
-  let sum = 0;
-  for (let number of numbers) {
-    let squared = Math.pow(number, 2);
+let sum = 0;
+const average = (arr) => {
+  for (let num of arr) {
+    const squared = num ** 2;
     sum += squared;
   }
-  const averageSum = sum / numbers.length;
-  return averageSum;
+  const averageNumber = sum / arr.length;
+  return averageNumber;
 };
-
-const array = average(numberArray);
-console.log(array);
+const findAverage = average(numberArray);
+console.log(findAverage);
