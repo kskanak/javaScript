@@ -56,7 +56,7 @@ const showMealDetails = (details) => {
           <h5 class="card-title">Catagory : ${details.strCategory}</h5>
           <h5 >Tags : ${details.strTags}</h5>
           <p class="card-text">
-            Recipe Link : <a href="${details.strYoutube}">${details.strYoutube}</a>
+            Recipe Link : <a href="${details.strYoutube}" target= "_blank">${details.strYoutube}</a>
           </p>
           <p class="card-text">
             Thank You For visiting
@@ -74,3 +74,4 @@ document.getElementById("search-btn").addEventListener("click", function () {
   const inputValue = inputSearch.value;
   showMealItem(inputValue);
 });
+showMealItem("");
