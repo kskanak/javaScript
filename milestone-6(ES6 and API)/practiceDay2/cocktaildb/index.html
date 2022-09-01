@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="title text-center mt-10">
+        <h1 class="text-4xl text-pink-800 font-bold">
+          Choose your Cocktail...
+        </h1>
+      </div>
+    </header>
+    <main class="p-16">
+      <!-- search section -->
+      <section
+        class="search-section border-b-4 pb-8 input-group flex justify-center border-b-pink-800"
+      >
+        <input
+          type="search"
+          name=""
+          id="search"
+          class="border-pink-800 border outline-none px-6 w-96"
+        />
+        <button class="px-4 py-2 bg-pink-800" id="searchBtn">Search</button>
+      </section>
+      <!-- spinner section -->
+      <section class="spinners text-center mt-24 hidden" id="spinner">
+        <progress class="progress w-96"></progress>
+      </section>
+      <!-- search not found section -->
+      <section class="warningMsg-Section text-center mt-10 hidden" id="warning">
+        <h3 class="text-3xl font-bold text-red-700">Search Not Found</h3>
+      </section>
+      <!-- details-section -->
+
+      <section class="cocktail-details" id="cocktailDetails">
+        <!-- The button to open modal -->
+
+        <input type="checkbox" id="my-modal" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box">
+            <label
+              for="my-modal"
+              class="btn btn-sm btn-circle absolute right-2 top-2"
+              >✕</label
+            >
+            <div id="modal-body"></div>
+
+            <div class="modal-action">
+              <label for="my-modal" class="btn">Yay!</label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- cocktail Name -->
+      <section
+        class="cocktail-name my-10 grid md:grid-cols-2 lg:grid-cols-3 gap-4"
+        id="cocktailContainer"
+      ></section>
+    </main>
+
+    <!-- main js -->
+    <script src="script.js"></script>
+  </body>
+</html>

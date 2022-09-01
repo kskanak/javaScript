@@ -10,11 +10,8 @@ const showDevice = async (searchValue, deviceLimit) => {
 };
 
 //  -------------------------------------------------display device fucntion--------------------------
-displayDevice = (deviceArray, deviceLimit) => {
-  // ----------------------------------------------DeviceContainer--------------
-  const deviceContainer = document.getElementById("deviceContainer");
-  deviceContainer.textContent = "";
-
+const displayDevice = (deviceArray, deviceLimit) => {
+  console.log(deviceArray);
   // no device found msg set
   if (deviceArray.length === 0) {
     document.getElementById("noFoundMessage").classList.remove("hidden");
@@ -30,6 +27,11 @@ displayDevice = (deviceArray, deviceLimit) => {
   } else {
     document.getElementById("showMoreBtn").classList.add("hidden");
   }
+
+  // ----------------------------------------------DeviceContainer--------------
+  const deviceContainer = document.getElementById("deviceContainer");
+  deviceContainer.textContent = "";
+
   // --------------------------------------------looping phoneArray----------------------------
   deviceArray.forEach((device) => {
     // -------------------------------------------destructuring phone Object--------------------

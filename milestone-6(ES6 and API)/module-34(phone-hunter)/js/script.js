@@ -40,8 +40,8 @@ const displayLoadPhone = (allPhone, limit) => {
     // writing inner html
     phoneDiv.innerHTML = `
       
-      <div class="card shadow-lg border-black border-5">
-      <img src="${image}" class="card-img-top h-50 px-5 py-4" alt="..." />
+      <div class="card shadow-lg border-black border-5"  >
+      <img src="${image}" class="card-img-top h-25 px-5 py-4" alt="${phone_name}"/>
       <div class="card-body px-5">
         <h4 class="card-title">${phone_name}</h4>
         <h6>${brand}</h6>
