@@ -4,7 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind css and cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Favourite Country Food</title>
   </head>
-  <body></body>
+  <body>
+    <header class="text-center border-b-4 border-purple-900">
+      <div class="title mt-10">
+        <h1 class="text-4xl text-purple-800 font-bold">
+          Country <span class="text-yellow-400">Food</span>
+        </h1>
+      </div>
+      <div class="search-div input-group flex justify-center my-10">
+        <input
+          type="search"
+          name=""
+          id="search"
+          class="border-4 border-yellow-300 w-96 pl-28 outline-none"
+          placeholder="Search by country"
+        />
+        <button
+          class="px-3 py-2 bg-purple-800 text-white font-bold"
+          id="searchBtn"
+        >
+          Search
+        </button>
+      </div>
+      <div class="foodType text-left pl-36 pb-10" id="foodtypeSection">
+        <h2 class="text-2xl font-bold text-green-800">
+          Food Type : <span id="foodType"></span>
+        </h2>
+        <h2 class="text-2xl font-bold text-indigo-800">
+          Variaty : <span id="foodVairty"></span>
+        </h2>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="px-16">
+      <!-- warning msg -->
+      <section id="warningMsg" class="text-center mt-5 hidden">
+        <h3 class="text-4xl font-semibold text-pink-900">
+          Country Food Not Available
+        </h3>
+      </section>
+
+      <!-- spinnder -->
+      <section id="spinner" class="text-center mt-24 hidden">
+        <progress class="progress w-96"></progress>
+      </section>
+
+      <!-- food details -->
+      <section id="foodDetails-section">
+        <!-- modal -->
+
+        <!-- The button to open modal -->
+
+        <input type="checkbox" id="my-modal-3" class="modal-toggle" />
+        <div class="modal">
+          <div class="modal-box relative">
+            <label
+              for="my-modal-3"
+              class="btn btn-sm btn-circle absolute right-2 top-2"
+              >✕</label
+            >
+            <!-- modal body -->
+            <div id="modalBody"></div>
+            <!-- modalbody -->
+            <div class="modal-action">
+              <label for="my-modal-3" class="btn">Yammy!</label>
+            </div>
+          </div>
+        </div>
+
+        <!-- modal -->
+      </section>
+
+      <!-- countryFood section -->
+      <section
+        class="countryFood grid md:grid-cols-2 lg:grid-cols-3 gap-5 my-10"
+        id="foodContainer"
+      ></section>
+    </main>
+    <!-- main js -->
+    <script src="/script.js"></script>
+  </body>
 </html>

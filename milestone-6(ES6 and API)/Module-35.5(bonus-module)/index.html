@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- tailwind cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="px-16 h-full pb-24">
+    <header class="pt-4">
+      <div class="website_title text-center flex justify-center items-center">
+        <img src="https://openweathermap.org/img/wn/02d@2x.png" alt="" />
+        <h1 class="text-xl sm:text-3xl font-bold text-white">
+          Today's Weather
+        </h1>
+      </div>
+      <div class="search-section input-group flex justify-center mt-4 mb-6">
+        <input
+          type="search"
+          name=""
+          id="input-search"
+          class="border-2 md:w-96 pl-10"
+          placeholder="Search City Name"
+        />
+        <button class="px-4 py-2 bg-cyan-300 font-bold" id="searchBtn">
+          Search
+        </button>
+      </div>
+    </header>
+    <main id="weather-container">
+      <!-- title section -->
+    </main>
+    <!-- script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
