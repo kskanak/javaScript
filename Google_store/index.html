@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- tailwind cdn  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.28.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- fontawesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn  -->
+    <title>Google-Store</title>
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <!-- navbar start -->
+      <div class="navbar bg-slate-900 text-white px-10">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <h2 class="text-xl lg:text-3xl">Google_Store</h2>
+        </div>
+
+        <div class="flex-none gap-2">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-8 -ml-48 p-2 shadow bg-base-100 rounded-box w-52 text-black"
+            >
+              <li><a href="index.html">Home</a></li>
+              <li><a>Wishlist</a></li>
+              <li><a>Recycle Bin</a></li>
+              <li>
+                <a>
+                  <label for="my-drawer-4" class="drawer-button">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </label>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal p-0">
+              <li id="home"><a href="index.html">Home</a></li>
+              <li id="wishlist"><a>WishList</a></li>
+              <li id="recycle_bin"><a>Recycle Bin</a></li>
+              <li class="">
+                <a>
+                  <label for="my-drawer-4" class="drawer-button">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 relative"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
+                    <span
+                      class="badge badge-sm indicator-item absolute bottom-8 left-8"
+                      id="badge_count"
+                    ></span>
+                  </label>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- navbar end -->
+    </header>
+    <!-- -------------------------------------------------header end -->
+    <main>
+      <!-- drawer body -->
+      <div class="drawer drawer-end">
+        <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+        <div class="drawer-content px-8 md:px-24">
+          <!-- ----------------------------------------------------------Page content here -->
+          <!-- --------------------------------------------------------home title -->
+          <section class="home_title">
+            <h2
+              class="text-5xl text-center font-semibold bg-gradient-to-r from-orange-500 via-purple-500 to-pink-500 text-transparent pb-10 pt-5 bg-clip-text"
+            >
+              Google_Store
+            </h2>
+          </section>
+          <!---------------------------------------------------------- google items -->
+          <section class="google-items block my-10" id="google-items">
+            <div
+              class="card-container grid md:grid-cols-2 lg:grid-cols-3 gap-5"
+              id="google-item-container"
+            >
+              <!-- card  -->
+
+              <!-- card  -->
+            </div>
+          </section>
+          <!-- -------------------------------------------------------------wishlistitems------------------ -->
+          <section id="wishlist_container">
+            <div
+              class="card-container grid md:grid-cols-2 lg:grid-cols-3 gap-5"
+              id="wishlist-item-container"
+            >
+              <!-- card  -->
+
+              <!-- card  -->
+            </div>
+          </section>
+          <!-------------------------------------------------------item details section---------------------- -->
+          <!-- modal begin -->
+
+          <!-- The button to open modal -->
+
+          <input type="checkbox" id="my-modal" class="modal-toggle" />
+          <div class="modal">
+            <div class="modal-box">
+              <label
+                for="my-modal"
+                class="btn btn-sm btn-circle absolute right-2 top-2"
+                >✕</label
+              >
+              <div class="modal-body" id="detailsContainer"></div>
+              <div class="modal-action">
+                <label for="my-modal" class="btn">Yay!</label>
+              </div>
+            </div>
+          </div>
+
+          <!-------------------------------------------------------item details section---------------------- -->
+        </div>
+        <div class="drawer-side">
+          <label for="my-drawer-4" class="drawer-overlay"></label>
+          <div
+            class="menu p-4 overflow-y-auto w-80 bg-red-100 text-sky-900"
+            id="calculation-container"
+          >
+            <!-- Sidebar content here -->
+            <h2 class="text-semibold text-2xl">
+              Cart_Items : <span id="cartItems"></span>
+            </h2>
+            <div id="cartImage-container"></div>
+            <h2 class="text-2xl font-semibold text-center">Calculation</h2>
+            <div
+              class="total-calculation border-2 my-20 text-xl text-sky-900 p-5 rounded border-sky-900"
+            >
+              <h2>Item-Price : $ <span id="itemPrice"></span></h2>
+              <h2>Item-tax : $ <span id="itemTax"></span></h2>
+              <h2>Total-Price : $ <span id="totalPrice"></span></h2>
+            </div>
+            <h2 id="grand-total"><span id="grandTotalPrice"></span></h2>
+            <button id="clearCart" class="px-5 py-2 bg-red-600 text-white">
+              Clear cart
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- drawer body -->
+    </main>
+    <footer class="flex justify-around bg-slate-900 py-24 text-white">
+      <div class="copyright">@copyright at ks kanak</div>
+      <div class="socialIcon">Social Icon</div>
+    </footer>
+    <!-- main script -->
+    <script src="/script/script.js"></script>
+  </body>
+</html>
